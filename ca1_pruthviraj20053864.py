@@ -237,7 +237,7 @@ def get():
     Result={}
     Result['market']=row[0]
     Result['stock']=row[1]
-    # Result['Symbol']=row[2]
+    Result['Symbol']=row[2]
     # Result['Company Name']=row[3]
     # Result['Asset Type']=row[4]
     # Result['Last Price']=row[5]
