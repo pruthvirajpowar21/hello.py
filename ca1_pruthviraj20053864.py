@@ -229,7 +229,7 @@ app = Flask(__name__)
 CORS(app)
 
 @app.route("/getStock", methods=['GET']) #Get Shoes
-def get_stock_data():
+def get():
   cursor.execute("SELECT * FROM stock_data")
   rows = cursor.fetchall()
   Results=[]
