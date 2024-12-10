@@ -6,6 +6,8 @@
 <title>Test API Client</title>
 <script>
 let doIt=()=>{
+  let button = document.querySelector("button");
+  button.disabled = true; // Disable the button after the first click
   let tab=document.getElementById("tab1");
   let rows=tab1.getElementsByTagName('tr');
   fetch('https://pruthviraj.uksouth.cloudapp.azure.com:8080/')
