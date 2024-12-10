@@ -245,7 +245,7 @@ def get():
     Result['Lot Size']=row[7]
     Result['Is Active']=row[8]
     Result['Dividend']=row[9]
-    Result['currency']=row[10]
+    Result['Currency']=row[10]
     Results['Price Change']=row[11]
     Result['Market Volume']=row[12]
     Result['Volatility']=row[13]
