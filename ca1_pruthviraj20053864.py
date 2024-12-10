@@ -236,7 +236,7 @@ def get():
   for row in rows: #Format the Output Results and get to return string
     Result={}
     Result['market']=row[0]
-    # Result['stock']=row[1]
+    Result['stock']=row[1]
     # Result['Symbol']=row[2]
     # Result['Company Name']=row[3]
     # Result['Asset Type']=row[4]
