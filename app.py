@@ -25,11 +25,14 @@ dictConfig({
         'handlers': ['wsgi']
     }
 })
-app = Flask(__name__)
+app = Flask(_name_)
 CORS(app)
 # My SQL Instance configurations
 # Change the HOST IP and Password to match your instance configurations
-
+@app.route("/index.html") #Default - Show Data
+def index(): # Name of the method
+    return render_template('index.html')
+    
 @app.route("/add", methods=['GET', 'POST']) #Add Student
 def add():
   if request.method == 'POST':
@@ -64,6 +67,6 @@ def hello(): # Name of the method
     mimetype='application/json'
   )
   return ret #Return the data in a string format
-if __name__ == "__main__":
+if _name_ == "_main_":
   #app.run(host='0.0.0.0',port='8080') #Run the flask app at port 8080
   app.run(host='0.0.0.0',port='8080', ssl_context=('cert.pem', 'privkey.pem')) #Run the flask app at port 8080
