@@ -239,7 +239,7 @@ def get():
     Result['stock']=row[1]
     Result['Symbol']=row[2]
     Result['Company Name']=row[3]
-    # Result['Asset Type']=row[4]
+    Result['Asset Type']=row[4]
     # Result['Last Price']=row[5]
     # Result['Volume']=row[6]
     # Result['Lot Size']=row[7]
