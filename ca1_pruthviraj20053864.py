@@ -247,7 +247,7 @@ def get():
     # Result['Volume']=row[6]
     # Result['Lot Size']=row[7]
     # Result['Is Active']=row[8]
-    Result['Dividend']=row[9]
+    Result['Dividend']=row[5]
     # Result['Currency']=row[10]
     # Results['Price Change']=row[11]
     # Result['Market Volume']=row[12]
