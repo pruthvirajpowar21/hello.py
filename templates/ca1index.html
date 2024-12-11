@@ -10,7 +10,7 @@ let doIt=()=>{
   button.disabled = true; // Disable the button after the first click
   let tab=document.getElementById("tab1");
   let rows=tab1.getElementsByTagName('tr');
-  fetch('https://pruthviraj.uksouth.cloudapp.azure.com:8080/')
+  fetch('https://pruthviraj.uksouth.cloudapp.azure.com:8080/getStock')
     .then(response => response.json())
     .then(data=>data.Results.forEach(  //.slice(0,3)
       x=>{
